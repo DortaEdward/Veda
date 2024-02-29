@@ -4,10 +4,15 @@
     <title>FTP</title>
     <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
-  <body class="min-w-screen">
+  <body class="min-w-screen min-h-screen flex flex-col justify-between">
     {% include "partials/header.html" %}
-    <div class="w-full bg-red-500">
-      
+    <div class="w-full flex-grow flex flex-col items-center justify-center gap-3">
+      <p class="text-4xl font-semibold max-w-2xl text-center">Your number one solution to sending and recieving files</p>
+      <p class="text-gray-400 font-medium text-2xl">Store your files in one place</p>
+      <div class="flex items-center">
+        <button class="text-lg border font-bold rounded-lg px-4 py-1 shadow">Get Started</button>
+      </div>
     </div>
+    {% include "partials/footer.html" %}
   </body>
 </html>
